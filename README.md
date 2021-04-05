@@ -1,125 +1,47 @@
-# Functional Javascript Workshop
+# Taller de Javascript Funcional
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nodeschool/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-<img alt="NodeSchool Discussions" src="https://f.cloud.github.com/assets/43438/1368315/63919ad8-3997-11e3-909e-8193f5a94b59.png" align="right">
+## Misión
 
-### Teaching fundamental functional programming features of Javascript.
+Muchos recursos de aprendizaje de programación funcional te enseñarán como escribir código al estilo funcional, pero usualmente es altamente indirecto, profundamente abstraído, requiere el entendimiento de complejas relaciones entre llamados de librerías personalizadas y no representa la realidad de como la gente escribe realmente JavaScript.
 
-#### No libraries required (i.e. no underscore), just ES5.
+La meta de este taller es de crear problemas realistas que pueden ser resueltos usando JavaScript nativo y conciso.
 
-<a href="https://nodei.co/npm/functional-javascript-workshop/" ><img src="https://nodei.co/npm/functional-javascript-workshop.png?downloads=true&stars=true"><br />
-<img src="https://nodei.co/npm-dl/functional-javascript-workshop.png?months=12">
-</a>
+**Por favor lee los ejercicios cuidadosamente y sigue todas las instrucciones, están para ayudarte a aprender**
 
-
-
-[![Gittip](http://img.shields.io/gittip/timoxley.png)](https://www.gittip.com/timoxley/)
-## Mission
-
-Many functional programming learning resources will teach you to write functional code, but it's often highly indirect,
-deeply abstracted, requires understanding complex relationships between custom library calls, and doesn't represent
-the reality of how people actually write JavaScript.
-
-The goal of this workshop is to create realistic problems that can be solved using terse, vanilla, idiomatic JavaScript.
-
-**Please read the exercises thoroughly and obey all conditions, they are there to help you learn!**
-
-## Installation & Update
+## Instalación y actualización
 
 ```
-$ npm install -g functional-javascript-workshop@latest
+$ npm install
 ```
 
-Some npm installations require use of `sudo` in the above command. Recommend to instead [reinstall node/npm so you don't need sudo](https://gist.github.com/isaacs/579814).
+## Instrucciones de uso
 
-## Usage Instructions
+#### 1. Elige el problema en el que quieras trabajar
 
-#### 1. Selecting a problem to work on
-
-Once the workshop is installed, run `functional-javascript-workshop` to print a menu
-where you can select a problem to work on.
+Una vez el taller está instalado, corre `node functional-javascript-workshop` para imprimir en consola un menú donde puedas seleccionar un problema para trabajar.
 
 ```
-$ functional-javascript-workshop
+$ node functional-javascript-workshop
 ```
 
-Problems are listed in rough order of difficulty. You are advised to complete them in order, as later problems
-will build on skills developed by solving previous problems.
+Los problemas están listados en un vago orden de dificultad. Se recomienda completarlos en orden, debido a que ejercicios posteriores serán resueltos por habilidades desarrolladas al resolver problemas previos.
 
-#### 2. Writing your solution
+#### 2. Escribiendo tu solución
 
-Once you have selected a problem, the workshop will remember which problem you are working on.
-Using your preferred editor, simply create a file to write your solution in. Most problems will
-supply some boilerplate with which to get started. Copy this from the problem description to your
-solution file.
+Una vez has elegido un problema, el taller recordará en cual problema estás trabajando. Usando tu editor preferido, simplemente crea un archivo en el cual escribir tu solución. La mayoría de problemas proveerán algúna plantilla con la cual comenzar. Cópialo de la descripción del problema a tu archivo de solución.
 
-#### 3. Testing your solution
+#### 3. Probando tu solución
 
-Use the workshop's `run` command to point the workshop at your solution file. Your solution will be loaded 
-and passed the problem input. This usually won't perform any validation, it will only show the program output.
+Usa el comando del taller `run` para apuntar el taller a tu archivo de solución. Tu solución será cargada y pasada a el proceso del problema. Esto usualmente no correrá ningún tipo de validación, simplemente mostrará el resultado del programa.
 
 ```
-$ functional-javascript-workshop run mysolution.js
+$ functional-javascript-workshop run misolucion.js
 ```
 
-#### 4. Verifying your solution
+#### 4. Verificando tu solución
 
-Your solution will be verified against the output of the 'official' solution.
-If all of the output matches, then you have successfully solved the problem!
-
-```
-$ functional-javascript-workshop verify mysolution.js
-```
-
-## Stuck?
-
-Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/timoxley/functional-javascript-workshop/issues).
-
-Full curriculum reviews [like this one](https://github.com/timoxley/functional-javascript-workshop/issues/7) are incredibly helpful. More feedback like this please!
-
-We're looking for more practical problems, so if you come across a problem in your day-to-day work which was solved simply and elegantly with some functional JavaScript techniques, please help us create an exercise out of it.
-
-
-## Screenshots
-
-![screen shot 2013-09-27 at 5 18 45 pm](https://f.cloud.github.com/assets/43438/1225514/08c87a70-276a-11e3-8db7-485e3c760373.png)
-![screen shot 2013-09-23 at 9 13 02 pm](https://f.cloud.github.com/assets/43438/1191466/f289f38a-2451-11e3-9ba5-a3c224b5ca97.png)
-
-## Resources
-
-[A growing collection of quality functional javascript resources can be found in the wiki](https://github.com/timoxley/functional-javascript-workshop/wiki).
-
-
-## Thanks rvagg
-
-This tutorial was built using rvagg's [workshopper](https://github.com/rvagg/workshopper) framework.
-
-## Summary
+Tu solución será verificada contra el resultado de la solución 'oficial'. Si todos los resultados concuerdan, ¡has solucionado el problema correctamente!.
 
 ```
- project  : functional-javascript
- repo age : 7 months
- active   : 50 days
- commits  : 152
- files    : 70
- authors  :
-    69	Tim                     45.4%
-    67	Tim Oxley               44.1%
-     3	Sequoia McDowell        2.0%
-     2	ZJ                      1.3%
-     1	Naor Biton              0.7%
-     1	Pavel Kornilov          0.7%
-     1	Steve Teo               0.7%
-     1	Wei Lu                  0.7%
-     1	Yoshua Wuyts            0.7%
-     1	flakyfilibuster         0.7%
-     1	Arvid Andersson         0.7%
-     1	tim walker              0.7%
-     1	Brendon Murphy          0.7%
-     1	Lorcan Coyle            0.7%
-     1	Matthew Hokanson        0.7%
+$ functional-javascript-workshop verify misolucion.js
 ```
-
-## License
-
-MIT
